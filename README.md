@@ -30,4 +30,4 @@ The analysis for Part 1 was conducted using a subset of the Wikidata editor inte
 1. **Prepare Data**: Ensure the Part 2 `.csv` files are present in the working directory and named according to the convention listed above.
 2. **Setup Environment**: Use the provided `environment.yml` to create a matching Conda environment:
    ```bash
-   conda env create -f environment.yml
+   conda env create -f environment.yml 
