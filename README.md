@@ -5,8 +5,9 @@ This repo contains all the code, environment setup, and data notes for Part 1 an
 1. Part1_wikidata.ipynb : Looks at the social network of Wikidata editors, focusing on how certain communities interact with each other.
 2. Part2_Leeds_Spatial.ipynb : Does some spatial network analysis on Leeds – finding accident hotspots and planning a marathon route.
 3. environment.yml : A Conda environment file that lists all the libraries I used (like OSMnx, Spaghetti, PySAL). You'll need this to run my code.
-4. Get the data ready: Make sure the four CSV files for Part 2 are in the same folder as the notebooks, and named exactly as above.
-5. Set up the environment: Use the `environment.yml` file to create a Conda environment. Run this command in your terminal: `conda env create -f environment.yml`
+4. **How to run these codes**: 
+   - Get the data ready: Make sure the four CSV files for Part 2 are in the same folder as the notebooks, and named exactly as above.
+   - Set up the environment: Use the `environment.yml` file to create a Conda environment. Run this command in your terminal: `conda env create -f environment.yml`
 
 ## Data sources & notes
 
