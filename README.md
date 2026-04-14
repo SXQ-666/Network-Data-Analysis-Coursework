@@ -1,33 +1,32 @@
 # Network Data Analysis Coursework
 
-This repository contains the complete code, environment configuration, and data documentation for Part 1 and Part 2 of the Network Data Analysis module.
+This repo contains all the code, environment setup, and data notes for Part 1 and Part 2 of my Network Data Analysis module.
 
-## Project Structure
-- `Part1_Wikidata.ipynb`: Analysis of the Wikidata editor social network, focusing on specific community interaction patterns.
-- `Part2_Leeds_Spatial.ipynb`: Spatial network analysis of Leeds, including accident pattern detection and marathon route planning.
-- `environment.yml`: Conda environment file containing all necessary libraries (such as `OSMnx`, `Spaghetti`, and `PySAL`) required to run both parts of the analysis.
+## What's in here
+- `Part1_Wikidata.ipynb`: Looks at the social network of Wikidata editors, focusing on how certain communities interact with each other.
+- `Part2_Leeds_Spatial.ipynb`: Does some spatial network analysis on Leeds – finding accident hotspots and planning a marathon route.
+- `environment.yml`: A Conda environment file that lists all the libraries I used (like `OSMnx`, `Spaghetti`, `PySAL`). You'll need this to run my code.
 
-## Data Sources & Documentation
-To ensure the reproducibility of the results, the following datasets were used:
+## Data sources & notes
+To make sure my results can be reproduced, I used the following datasets:
 
-### Part 1: Wikidata Social Network
-The analysis for Part 1 was conducted using a subset of the Wikidata editor interaction data provided by the module. I specifically selected and analyzed the following three datasets:
+### Part 1: Wikidata social network
+I used a subset of the Wikidata editor interaction data provided by the module. I picked three specific datasets to analyse:
 1. `BOT_REQUESTS`
 2. `PROJECT_CHAT`
 3. `REQUEST_FOR_DELETION`
 
-### Part 2: Leeds Road Safety & Spatial Network
-- **Source**: Road Traffic Accidents data obtained from the official UK Government Open Data portal ([data.gov.uk](https://www.data.gov.uk/dataset/6efe5505-941f-45bf-b576-4c1e09b579a1/road-traffic-accidents)).
-- **Time Period**: 2013, 2014, 2015, and 2016.
-- **File Naming Note**: For clarity and to match the paths defined in the Jupyter Notebook, the raw CSV files were renamed upon download as follows:
+### Part 2: Leeds road safety & spatial network
+- **Accident data**: Downloaded from the UK Government open data portal ([data.gov.uk](https://www.data.gov.uk/dataset/6efe5505-941f-45bf-b576-4c1e09b579a1/road-traffic-accidents)), covering 2013, 2014, 2015 and 2016.
+- **File names**: I renamed the raw CSV files after downloading so they match the paths in my notebook:
   - `Road traffic accidents_2013.csv`
   - `Road traffic accidents_2014.csv`
   - `Road traffic accidents_2015.csv`
   - `Road traffic accidents_2016.csv`
-- **Network Data**: Real-time road network topology extracted from OpenStreetMap (OSM) via the `OSMnx` library.
+- **Road network data**: Extracted live from OpenStreetMap using the `OSMnx` library.
 
-## How to Reproduce the Analysis
-1. **Prepare Data**: Ensure the Part 2 `.csv` files are present in the working directory and named according to the convention listed above.
-2. **Setup Environment**: Use the provided `environment.yml` to create a matching Conda environment:
+## How to run my analysis
+1. **Get the data ready**: Make sure the four CSV files for Part 2 are in the same folder as the notebooks, and named exactly as above.
+2. **Set up the environment**: Use the `environment.yml` file to create a Conda environment. Run this command in your terminal:
    ```bash
-   conda env create -f environment.yml 
+   conda env create -f environment.yml
